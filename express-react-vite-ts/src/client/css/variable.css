@@ -1,0 +1,37 @@
+:root {
+	--base-h: 210;
+	--base-s: 10%;
+	--base: hsl(var(--base-h), var(--base-s), 100%);
+
+	--inverse-text: hsl(var(--base-h), var(--base-s), 100%);
+
+	--body-bg: hsl(var(--base-h), var(--base-s), 95%);
+	--body-text: hsl(var(--base-h), var(--base-s), 14%);
+	--body-font: 'Poppins', sans-serif;
+
+	--btn-border: hsl(var(--base-h), var(--base-s), 70%);
+
+	--navbar-height: 50px;
+	--navbar-bg: var(--base);
+	--navbar-hover-bg: hsl(var(--base-h), var(--base-s), 95%);
+	--navbar-border: hsl(var(--base-h), var(--base-s), 90%);
+	
+	--primary-h: 212;
+	--primary-s: 74%;
+	--primary: hsl(var(--primary-h), var(--primary-s), 45%);
+
+	--accent-h: 107;
+	--accent-s: 100%;
+	--accent: hsl(var(--accent-h), var(--accent-s), 63%);
+
+	--success-h: 129;
+	--success-s: 53%;
+	--success: hsl(var(--success-h), var(--success-s), 46%);
+
+	--danger-h: 4;
+	--danger-s: 90%;
+	--danger: hsl(var(--danger-h), var(--danger-s), 58%);
+
+	--scrollbar: hsla(var(--base-h), var(--base-s), 50%, 1);
+	--scrollbar-track: hsla(var(--base-h), var(--base-s), 90%, 1);
+}

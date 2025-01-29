@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import './variable.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Window's Scrollbar */
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--scrollbar) var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar {
+	width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--scrollbar);
+	border-radius: 20px;
+	border: 3px solid var(--scrollbar-track);
+}
+
+::placeholder {
+	color: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%));
+	opacity: 1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+	transition:
+		background-color 0s 600000s,
+		color 0s 600000s !important;
+}
+
+body {
+	font-family: var(--body-font);
+	background-color: var(--body-bg);
+	color: var(--body-text);
+}

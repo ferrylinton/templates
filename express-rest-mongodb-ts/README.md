@@ -1,11 +1,17 @@
-# express-react-rite-ts
+# express-rest-mongodb-ts
 
-Simple App build with Express JS and React JS (typescirpt)
+Simple REST App build with Express JS and Mongodb (typescirpt)
 
 ## Update packages
 
 ```
 npx npm-check-updates -i
+```
+
+## Install packages
+
+```
+npm install
 ```
 
 ## Enable simple-git-hooks

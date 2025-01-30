@@ -15,7 +15,7 @@
 	--navbar-bg: var(--base);
 	--navbar-hover-bg: hsl(var(--base-h), var(--base-s), 95%);
 	--navbar-border: hsl(var(--base-h), var(--base-s), 90%);
-	
+
 	--primary-h: 212;
 	--primary-s: 74%;
 	--primary: hsl(var(--primary-h), var(--primary-s), 45%);

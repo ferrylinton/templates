@@ -1,7 +1,6 @@
 import globals from 'globals';
 import pluginJs from '@eslint/js';
 import tseslint from 'typescript-eslint';
-import pluginReact from 'eslint-plugin-react';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -10,7 +9,6 @@ export default [
 	{ languageOptions: { globals: { ...globals.node, ...globals.browser } } },
 	pluginJs.configs.recommended,
 	...tseslint.configs.recommended,
-	pluginReact.configs.flat.recommended,
 	{
 		rules: {
 			'import/first': 'off',
@@ -28,16 +26,10 @@ export default [
 					ignoreRestSiblings: true,
 				},
 			],
-			'react/react-in-jsx-scope': 'off',
 			'no-undef': ['error', { typeof: true }],
 			'no-import-assign': 'error',
 			'no-unreachable': 'error',
 			'no-extra-boolean-cast': 'off',
-		},
-		settings: {
-			react: {
-				version: 'detect',
-			},
 		},
 	},
 ];

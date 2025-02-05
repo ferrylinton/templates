@@ -10,7 +10,7 @@
 		"typescript"
 	],
 	"scripts": {
-		"start": "cd dist && cross-env NODE_ENV=production node server.cjs",
+		"start": "cross-env NODE_ENV=production node dist/server.cjs",
 		"dev": "nodemon -w src -x tsx src/server.ts",
 		"build": "cross-env NODE_ENV=production tsx build-node.ts",
 		"lint": "eslint --fix ./src",

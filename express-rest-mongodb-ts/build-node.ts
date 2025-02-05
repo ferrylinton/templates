@@ -16,6 +16,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 		await exec('npm run lint', './');
 		await copy('./src/favicon.ico', './dist/favicon.ico');
 		await copy('./.env', './dist/.env');
+		await copy('./ecosystem.config.cjs', './dist/ecosystem.config.cjs');
 		await copy('./package.json', './dist/package.json');
 		await exec('npm pkg delete devDependencies', './dist');
 		await exec('npm pkg delete lint-staged', './dist');
@@ -59,7 +60,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 				plugins: [
 					new webpack.DefinePlugin({
-						'process.env': {
+						'process.envc': {
 							NODE_ENV: JSON.stringify(process.env.NODE_ENV),
 						},
 					}),
